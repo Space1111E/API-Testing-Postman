@@ -1,36 +1,58 @@
 # 🧪 API Testing with Postman
 
-Ky projekt përfshin testimin funksional të një API-je duke përdorur **Postman**.
-
-## 🔧 Çfarë është testuar:
-
-- GET – marrja e të dhënave
-- POST – krijimi i një burimi të ri
-- PUT – përditësimi i të dhënave ekzistuese
-- DELETE – fshirja e një burimi
-
-## ✅ Qëllimi i testimit
-
-- Verifikimi i status code-ve
-- Verifikimi i përmbajtjes së përgjigjeve
-- Testime negative për të kontrolluar që API reagon siç duhet ndaj inputeve të pasakta
-
-## 📦 API e përdorur:
-
-[JSONPlaceholder](https://jsonplaceholder.typicode.com/) – Fake REST API për testim dhe prototipim
-
-## 📄 Dokumentet e përfshira:
-
-- [`Test_Cases.md`](./Test_Cases.md) – Lista e skenarëve të testimit
-- [`Bug_Report.md`](./Bug_Report.md) – Bug-ët e zbuluar gjatë testimit
-- [`screenshots/`](./screenshots) – Screenshot-e nga testet në Postman
-
-## 📎 Koleksioni Postman:
-
-🔗 [Link për koleksionin në Postman (nëse e ke ngarkuar)](https://www.postman.com/)
-
-## 📸 Screenshot
-
-![Postman Test Example](./screenshots/example.png) <!-- Zëvendëso me screenshot-in tënd -->
+This project covers the **functional testing** of an API using Postman.
 
 ---
+
+## 🔧 What Has Been Tested:
+
+- **GET** – Retrieving data  
+- **POST** – Creating a new resource  
+- **PUT** – Updating existing data  
+- **DELETE** – Deleting a resource  
+
+---
+
+## ✅ Testing Goals:
+
+- Verify HTTP status codes  
+- Validate response content  
+- Perform negative testing to ensure API handles incorrect inputs properly  
+
+---
+
+## 📦 API Used:
+
+- **JSONPlaceholder** – Fake REST API for testing and prototyping  
+
+---
+
+## 📋 Requirements
+
+- [Postman](https://www.postman.com/downloads/) installed  
+- Access to the internet (for the public API)  
+- Optional: [Newman](https://www.npmjs.com/package/newman) for running tests via command line  
+
+---
+
+## ▶️ How to Run Tests
+
+1. Import the Postman collection from the `collections/` folder into Postman.  
+2. Set up any required environment variables if necessary.  
+3. Run individual requests or the entire collection using Postman’s Collection Runner.  
+4. (Optional) Use Newman to run the collection via CLI:  
+   ```bash
+   newman run collections/YourCollectionName.postman_collection.json
+  
+   ```
+
+   
+   # 📎 Postman Collection
+ 🔗 https://www.postman.com
+---
+
+## 📄 Included Documents
+- `Test_Cases.md` – List of test scenarios  
+- `Bug_Report.md` – Bugs discovered during testing  
+
+
